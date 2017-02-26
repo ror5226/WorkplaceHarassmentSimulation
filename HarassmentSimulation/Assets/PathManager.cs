@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class PathManager : MonoBehaviour{
 
-    public static string pathName = "k";
+    public static string pathName = "";
     public static XDocument doc;
 
     // Use this for initialization

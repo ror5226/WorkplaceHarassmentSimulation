@@ -21,7 +21,6 @@ public class CharacterSelect : MonoBehaviour {
 
     public void Character_Selected()
     {
-        PathManager pathManager = new PathManager();
         PathManager.pathName += character;
 
         game.transform.position = menu.transform.position;
