@@ -1,9 +1,10 @@
-
+﻿
 <game>
 <k1>
     <text>Kathy: “First day at my dream company, so excited!.”</text>
     <button>1</button>
     <b1>Next</b1>
+    <image>HR</image>	
 </k1>
 
 //next
@@ -12,6 +13,7 @@
     <button>2</button>
     <b1>Take screenshots and report to HR</b1>
     <b2>Ignore it</b2>
+    <image>new_email</image>	
 </k11>
 
 //told hr
@@ -20,6 +22,7 @@
     <button>2</button>
     <b1>"Okay, it's no big deal."</b1>
     <b2>"No, I'm not okay with that."</b2>
+    <image>HR</image>	  
 </k111>
 
 //ok, its not biggie
@@ -28,6 +31,7 @@
     Kathy: *Sigh* “I hope today will go better.” </text>
     <button>1</button>
     <b1>Next</b1>
+    <image>nightday</image>	
 </k1111>
 
 //next
@@ -38,6 +42,7 @@
     <button>2</button>
     <b1>Tell HR again</b1>
     <b2>Ignore it</b2>
+    <image>null</image>	
 </k11111>
 
 <k111111>
@@ -45,6 +50,7 @@
     <button>2</button>
     <b1>"That's not fair."</b1>         //recursive
     <b2>Quit your job</b2>              //end game or go to main menu
+    <image>HR</image>	
 </k111111>
 
 //ignore the email
@@ -52,6 +58,7 @@
     <text>Boss comes by to your desk later that day.</text>
     <button>1</button>
     <b1>Next</b1>
+    <image>null</image>	
 </k112>
 
 //next
