@@ -1,14 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ButtonFunctionality : MonoBehaviour {
+public class NewBehaviourScript : MonoBehaviour {
 
-    public int buttonValue = 1; 
+    public char character = 'K';
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -17,10 +16,10 @@ public class ButtonFunctionality : MonoBehaviour {
 		
 	}
 
-    public void Button_Pressed()
+    public void Character_Selected()
     {
         PathManager pathManager = new PathManager();
-        PathManager.pathName += buttonValue.ToString();
+        PathManager.pathName += character;
         pathManager.Update_Text();
     }
 }
