@@ -55,7 +55,7 @@ public class PathManager : MonoBehaviour{
 
 public void Update_Desc(string s)
 {
-		GameObject description_text = GameObject.FindGameObjectWithTag("Description_Text");
+		GameObject description_text = GameObject.FindGameObjectWithTag("Desc_Text");
 		if (description_text != null)
 		{
 			Text desc_text = description_text.GetComponent<Text>();
