@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterNext : MonoBehaviour {
+public class EndButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,9 +13,11 @@ public class CharacterNext : MonoBehaviour {
 	void Update () {
 		
 	}
+
     public void Button_Pressed()
     {
-        CharacterSelect.game.transform.position = CharacterSelect.charact.transform.position;
-        CharacterSelect.charact.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
+        CharacterSelect.ending.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
+        CharacterSelect.menu.transform.localScale = new Vector3(2.0f, 1.3f, 0.0f);
+
     }
 }

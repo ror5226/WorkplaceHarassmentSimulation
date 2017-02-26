@@ -4,12 +4,12 @@
     <text>Kathy: “First day at my dream company, so excited!.”</text>
     <button>1</button>
     <b1>Next</b1>
-    <image>HR</image>	
+    <image>smiley</image>	
 </k1>
 
 //next
 <k11>
-    <text>*email pop up* It’s an email from the new Boss. Kathy reads it and disturbed by its unprofessional and perverted content. “That’s really creepy.” </text>
+    <text>*email pop up* It’s an email from the new Boss. Kathy reads it and disturbed by its unprofessional content. “That’s really creepy.” </text>
     <button>2</button>
     <b1>Take screenshots and report to HR</b1>
     <b2>Ignore it</b2>
@@ -42,7 +42,7 @@
     <button>2</button>
     <b1>Tell HR again</b1>
     <b2>Ignore it</b2>
-    <image>null</image>	
+    <image>new_email</image>	
 </k11111>
 
 <k111111>
@@ -58,7 +58,7 @@
     <text>Boss comes by to your desk later that day.</text>
     <button>1</button>
     <b1>Next</b1>
-    <image>null</image>	
+    <image>boss</image>	
 </k112>
 
 //next

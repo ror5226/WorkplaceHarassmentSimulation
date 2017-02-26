@@ -50,25 +50,21 @@ public class PathManager : MonoBehaviour{
 		var pathButton = doc.Descendants ("game").Descendants (pathName).Descendants ("button");
 		foreach (var button in pathButton) {
 			if (Convert.ToInt32(button.Value) >= 1) {
-                if (Convert.ToInt32(button.Value) == 1)
+                if (Convert.ToInt32(button.Value) >= 1)
                 {
-                    var button2 = doc.Descendants("game").Descendants(pathName).Descendants("b1");
-                    foreach (var b2 in button2)
+                    var button1 = doc.Descendants("game").Descendants(pathName).Descendants("b1");
+                    foreach (var b1 in button1)
                     {
-                        Update_ButtonText(b2.Value, 1);
+                        Update_ButtonText(b1.Value, 1);
                     }
-
-                    button_2.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
-                    button_3.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
                 }
-                else if (Convert.ToInt32(button.Value) == 2)
+                if (Convert.ToInt32(button.Value) == 2)
                 {
                     var button2 = doc.Descendants("game").Descendants(pathName).Descendants("b2");
                     foreach (var b2 in button2)
                     {
                         Update_ButtonText(b2.Value, 2);
                     }
-                    button_3.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
                 }
                 else
                 {
@@ -78,7 +74,20 @@ public class PathManager : MonoBehaviour{
                         Update_ButtonText(b3.Value, 3);
                     }
                 }
-			}
+
+                if (Convert.ToInt32(button.Value) == 1)
+                {
+                    button_2.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
+                    button_3.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
+                }
+                else if(Convert.ToInt32(button.Value) >= 2)
+                {
+                    button_3.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
+                }
+
+
+
+            }
             var pathImage = doc.Descendants("game").Descendants(pathName).Descendants("image");
 
             foreach(var image in pathImage)

@@ -20,13 +20,19 @@ public class ButtonFunctionality : MonoBehaviour {
     public void Button_Pressed()
     {
         PathManager pathManager = new PathManager();
-        
-        // Add in real num here later
-        if(PathManager.pathName != "K111")
+
+        if (((PathManager.pathName == "k111111" || PathManager.pathName == "k11211") && buttonValue == 2))
+        {
+            CharacterSelect.game.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
+            CharacterSelect.ending.transform.position = CharacterSelect.game.transform.position;
+
+        }
+        if (!((PathManager.pathName == "k111111" || PathManager.pathName == "k11211") && buttonValue == 1))
         {
             PathManager.pathName += buttonValue.ToString();
 
         }
+
         pathManager.Update_Text();
     }
 }
