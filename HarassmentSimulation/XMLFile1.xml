@@ -1,7 +1,72 @@
 
-
+<game>
 <k1>
     <text>Kathy: “First day at my dream company, so excited!.”</text>
     <button>1</button>
+    <b1>Next</b1>
 </k1>
 
+//next
+<k11>
+    <text>*email pop up* It’s an email from the new Boss. Kathy reads it and disturbed by its unprofessional and perverted content. “That’s really creepy.” </text>
+    <button>2</button>
+    <b1>Take screenshots and report to HR</b1>
+    <b2>Ignore it</b2>
+</k11>
+
+//told hr
+<k111>
+    <text>HR: “I’ll give him a warning. Would you mind letting it go this once?” </text>
+    <button>2</button>
+    <b1>"Okay, it's no big deal."</b1>
+    <b2>"No, I'm not okay with that."</b2>
+</k111>
+
+//ok, its not biggie
+<k1111>
+    <text>The next day.
+    Kathy: *Sigh* “I hope today will go better.” </text>
+    <button>1</button>
+</k1111>
+
+//next
+
+<k11111>
+    <text>*email pop up*
+    Kathy reads the title and groans. </text>
+    <button>2</button>
+    <b1>Tell HR again</b1>
+    <b2>Ignore it</b2>
+</k11111>
+
+<k111111>
+    <text> HR: "Why won't you just let this go."</text>
+    <button>2</button>
+    <b1>"That's not fair."</b1>         //recursive
+    <b2>Quit your job</b2>              //end game or go to main menu
+</k111111>
+
+//ignore the email
+<k112>
+    <text>Boss comes by to your desk later that day.</text>
+    <button>1</button>
+    <b1>Next</b1>
+</k112>
+
+//next
+<k1121>
+    <text>Boss: "Did you see my email? So, what do you think? Want to come back to my place after work?"</text>
+    <button>1</button>
+    <b1>*reject as politely as possible</b1>
+</k1121>
+
+//reject as politely as possible
+<k11211>
+    <text>Boss: "Why not?"</text>
+    <button>2</button>
+    <b1> "I just don't want to." </b1>   //recursive
+    <b2> quit your job </b2>        //end game or redirect to main menu
+</k11211>
+
+
+</game>

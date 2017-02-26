@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class PathManager : MonoBehaviour{
 
-    public static string pathName = "K";
-    XDocument doc;
+    public static string pathName = "k";
+    public static XDocument doc;
 
     // Use this for initialization
     void Start () {
@@ -22,28 +22,62 @@ public class PathManager : MonoBehaviour{
 
     public void Update_Text()
     {
-        // pathname is the name on the xml tag we're search for 
-        var pathText = doc.Descendants(pathName);
-        if(pathName != null)
-        {
+		// pathname is the name on the xml tag we're search for 
+		var pathText = doc.Descendants("game").Descendants(pathName).Descendants("text");
             foreach (var text in pathText)
             {
                 // Add in here searches for additional tags
-                Debug.Log(text.Value);
+				Update_Desc(text.Value);
             }
-        }
 
-        // Example code to update text 
-        GameObject description_text = GameObject.FindGameObjectWithTag("Description_Text");
-        if (description_text != null)
-        {
-            Text desc_text = description_text.GetComponent<Text>();
-            desc_text.text = " hello";
-        }
-        else
-        {
-            Debug.Log("Couldnt find it");
-        }
-    }
+		if ("button" >= 1) {
+		var button1 = doc.Descendants("game").Descendants(pathName).Descendants("b1");
+			foreach (var b1 in button1) {
+				Update_ButtonText (b1.Value,1);
+			}
+			if ("button" >= 2) {
+				var button2 = doc.Descendants("game").Descendants(pathName).Descendants("b2");
+					foreach (var b1 in button1) {
+					Update_ButtonText (b2.Value,2);
+				}
+				if ("button" = 3) {
+					var button3 = doc.Descendants("game").Descendants(pathName).Descendants("b3");
+						foreach (var b1 in button1) {
+							Update_ButtonText (b3.Value,3);
+					}
+				}
+			}
+		}
+
 }
 
+public void Update_Desc(string s)
+{
+		GameObject description_text = GameObject.FindGameObjectWithTag("Description_Text");
+		if (description_text != null)
+		{
+			Text desc_text = description_text.GetComponent<Text>();
+			//desc_text.text = Update_Text();
+			desc_text.text = s;
+		}
+		else
+		{
+			Debug.Log("Couldnt find it");
+		}
+	}
+
+
+public void Update_ButtonText (string s, int i) {
+	string tag = "b" + i.ToString();
+		GameObject button_text = GameObject.FindGameObjectWithTag(tag);
+	if (button_text != null){
+		Text b_text = button_text.GetComponent<Text>();
+		button_text.text= s;
+		}
+
+	else
+		{
+			Debug.Log("Couldn't find it");
+		}
+	}
+}		
