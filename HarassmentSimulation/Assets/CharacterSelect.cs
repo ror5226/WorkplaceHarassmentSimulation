@@ -27,7 +27,7 @@ public class CharacterSelect : MonoBehaviour {
     {
         PathManager pathManager = new PathManager();
 
-        PathManager.pathName += character;
+        PathManager.pathName = character.ToString();
         PathManager.pathName += "1";
 
         pathManager.Update_Text();

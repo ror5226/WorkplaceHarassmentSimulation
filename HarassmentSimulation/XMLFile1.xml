@@ -23,7 +23,7 @@
 
 //next
 <k1111>
-    <text>Kathy reads it and disturbed by its unprofessional content. “I don't think he is allowed to say things like that.” </text>
+    <text>Kathy reads it and is disturbed by its unprofessional content. “I don't think he is allowed to say things like that.” </text>
     <button>2</button>
     <b1>Take screenshots and report to HR</b1>
     <b2>Ignore it</b2>
@@ -52,7 +52,7 @@
 
 <k1111111>
     <text>*email pop up*
-    Kathy reads the title and groans. </text>
+    Kathy recieves another inappropriate email from her boss. </text>
     <button>2</button>
     <b1>Tell HR again</b1>
     <b2>Ignore it</b2>
@@ -67,21 +67,21 @@
     <image>HR</image>	
 </k11111111>
 
-<k1111111111>
+<k111111111>
     <text> HR: "This is out of character for him."</text>
     <button>2</button>
     <b1>"That's not fair."</b1>         //recursive
     <b2>Leave the company</b2>              //end game or go to main menu
     <image>HR</image>	
-</k1111111111>
+</k111111111>
 
-<k111111111111>
+<k1111111111>
     <text> HR: "He is a high performing manager"</text>
     <button>2</button>
     <b1>"That's not fair."</b1>         //recursive
     <b2>Leave the company</b2>              //end game or go to main menu
     <image>HR</image>	
-</k111111111111>
+</k1111111111>
 
 //ignore the email
 <k11112>
