@@ -30,25 +30,27 @@ public class PathManager : MonoBehaviour{
 				Update_Desc(text.Value);
             }
 
-		if ("button" >= 1) {
+		var pathButton = doc.Descendants ("game").Descendants (pathName).Descendants ("button");
+		foreach (var button in pathButton) {
+			if (Convert.ToInt32(button.Value) >= 1) {
 		var button1 = doc.Descendants("game").Descendants(pathName).Descendants("b1");
 			foreach (var b1 in button1) {
 				Update_ButtonText (b1.Value,1);
 			}
-			if ("button" >= 2) {
+				if (Convert.ToInt32(button.Value) >= 2) {
 				var button2 = doc.Descendants("game").Descendants(pathName).Descendants("b2");
-					foreach (var b1 in button1) {
+					foreach (var b2 in button2) {
 					Update_ButtonText (b2.Value,2);
 				}
-				if ("button" = 3) {
+					if (Convert.ToInt32(button.Value) == 3) {
 					var button3 = doc.Descendants("game").Descendants(pathName).Descendants("b3");
-						foreach (var b1 in button1) {
+						foreach (var b3 in button3) {
 							Update_ButtonText (b3.Value,3);
 					}
 				}
 			}
 		}
-
+	}
 }
 
 public void Update_Desc(string s)
@@ -72,7 +74,7 @@ public void Update_ButtonText (string s, int i) {
 		GameObject button_text = GameObject.FindGameObjectWithTag(tag);
 	if (button_text != null){
 		Text b_text = button_text.GetComponent<Text>();
-		button_text.text= s;
+		b_text.text= s;
 		}
 
 	else
