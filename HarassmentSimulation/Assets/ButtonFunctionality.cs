@@ -20,7 +20,13 @@ public class ButtonFunctionality : MonoBehaviour {
     public void Button_Pressed()
     {
         PathManager pathManager = new PathManager();
-        PathManager.pathName += buttonValue.ToString();
+        
+        // Add in real num here later
+        if(PathManager.pathName != "K111")
+        {
+            PathManager.pathName += buttonValue.ToString();
+
+        }
         pathManager.Update_Text();
     }
 }
