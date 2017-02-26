@@ -32,10 +32,13 @@ public class ButtonFunctionality : MonoBehaviour {
         {
             PathManager.pathName = "k11111"; 
         }
+        else if ((PathManager.pathName == "k1111"))
+        {
+            PathManager.pathName = "k11112";
+        }
         else if ((PathManager.pathName == "k11111"))
         {
             PathManager.pathName = "k111111";
-
         }
         else if ((PathManager.pathName == "k111111") && go)
         {
@@ -47,7 +50,11 @@ public class ButtonFunctionality : MonoBehaviour {
             PathManager.pathName = "k111111"; 
             go = false;
         }
-        else if (!(PathManager.pathName == "k1111211") && buttonValue == 1)
+        else if ((PathManager.pathName == "k1111211"))
+        {
+           
+        }
+        else 
         {
             PathManager.pathName += buttonValue.ToString();
 
