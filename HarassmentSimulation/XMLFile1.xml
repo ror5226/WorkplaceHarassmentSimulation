@@ -7,74 +7,104 @@
     <image>smiley</image>	
 </k1>
 
-//next
 <k11>
-    <text>*email pop up* It’s an email from the new Boss. Kathy reads it and disturbed by its unprofessional content. “That’s really creepy.” </text>
+    <text> Kathy is placed on a team that matches her technical speciality and she loves what she is is working on </text>
+    <button>1</button>
+    <b1>Next</b1>
+    <image>smiley</image>	
+</k11>
+
+<k111>
+    <text> *email pop up*                                                 It’s an email from the new boss. </text>
+    <button>1</button>
+    <b1>Next</b1>
+    <image>new_email</image>	
+</k111>
+
+//next
+<k1111>
+    <text>Kathy reads it and disturbed by its unprofessional content. “I don't think he is allowed to say things like that.” </text>
     <button>2</button>
     <b1>Take screenshots and report to HR</b1>
     <b2>Ignore it</b2>
     <image>new_email</image>	
-</k11>
+</k1111>
 
 //told hr
-<k111>
-    <text>HR: “I’ll give him a warning. Would you mind letting it go this once?” </text>
+<k11111>
+    <text>HR: “I’ll give him a warning. Would you mind letting it go?” </text>
     <button>2</button>
     <b1>"Okay, it's no big deal."</b1>
     <b2>"No, I'm not okay with that."</b2>
     <image>HR</image>	  
-</k111>
+</k11111>
 
 //ok, its not biggie
-<k1111>
+<k111111>
     <text>The next day.
     Kathy: *Sigh* “I hope today will go better.” </text>
     <button>1</button>
     <b1>Next</b1>
     <image>nightday</image>	
-</k1111>
+</k111111>
 
 //next
 
-<k11111>
+<k1111111>
     <text>*email pop up*
     Kathy reads the title and groans. </text>
     <button>2</button>
     <b1>Tell HR again</b1>
     <b2>Ignore it</b2>
     <image>new_email</image>	
-</k11111>
+</k1111111>
 
-<k111111>
+<k11111111>
     <text> HR: "Why won't you just let this go."</text>
     <button>2</button>
     <b1>"That's not fair."</b1>         //recursive
-    <b2>Quit your job</b2>              //end game or go to main menu
+    <b2>Leave the company</b2>              //end game or go to main menu
     <image>HR</image>	
-</k111111>
+</k11111111>
+
+<k111111111>
+    <text> HR: "This is out of character for him."</text>
+    <button>2</button>
+    <b1>"That's not fair."</b1>         //recursive
+    <b2>Leave the company</b2>              //end game or go to main menu
+    <image>HR</image>	
+</k111111111>
+
+<k11111111111>
+    <text> HR: "He is a high performing manager"</text>
+    <button>2</button>
+    <b1>"That's not fair."</b1>         //recursive
+    <b2>Leave the company</b2>              //end game or go to main menu
+    <image>HR</image>	
+</k11111111111>
 
 //ignore the email
-<k112>
+<k11112>
     <text>Boss comes by to your desk later that day.</text>
     <button>1</button>
     <b1>Next</b1>
     <image>boss</image>	
-</k112>
+</k11112>
 
 //next
-<k1121>
-    <text>Boss: "Did you see my email? So, what do you think? Want to come back to my place after work?"</text>
+<k111121>
+    <text>Boss: "Did you see my email? So, what do you think? Want to come back to my place after work?" </text>
     <button>1</button>
-    <b1>*reject as politely as possible</b1>
-</k1121>
+    <b1>Reject as politely as possible</b1>
+</k111121>
 
 //reject as politely as possible
-<k11211>
+<k1111211>
     <text>Boss: "Why not?"</text>
     <button>2</button>
     <b1> "I just don't want to." </b1>   //recursive
-    <b2> quit your job </b2>        //end game or redirect to main menu
-</k11211>
+    <b2> "This is inappropriate" I am telling HR </b2>        //end game or redirect to main menu
+</k1111211>
 
 
 </game>

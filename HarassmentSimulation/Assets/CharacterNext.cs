@@ -17,5 +17,7 @@ public class CharacterNext : MonoBehaviour {
     {
         CharacterSelect.game.transform.position = CharacterSelect.charact.transform.position;
         CharacterSelect.charact.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
+        CharacterSelect.game.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+
     }
 }

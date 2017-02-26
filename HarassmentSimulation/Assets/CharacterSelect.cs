@@ -34,6 +34,8 @@ public class CharacterSelect : MonoBehaviour {
 
         charact.transform.position = menu.transform.position;
         CharacterSelect.menu.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
+        CharacterSelect.charact.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        ;
 
     }
 }
